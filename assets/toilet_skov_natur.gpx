@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+  version="1.0"
+  creator="GPSBabel - http://www.gpsbabel.org"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/0"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2013-04-27T22:31:40Z</time>
+<bounds minlat="54.771875869" minlon="8.123399135" maxlat="57.719660957" maxlon="14.995325022"/>
+<wpt lat="56.854959024" lon="9.476504186">
+  <name>Jenle Plantage</name>
+  <cmt>Jenle Plantage</cmt>
+  <desc>Jenle Plantage</desc>
+</wpt>
+<wpt lat="56.820455696" lon="9.509700241">
+  <name>Aars Skov</name>
+  <cmt>Aars Skov</cmt>
+  <desc>Aars Skov</desc>
+</wpt>
+<wpt lat="55.377245883" lon="11.545376774">
+  <name>Frederikskilde P-plads</name>
+  <cmt>Frederikskilde P-plads</cmt>
+  <desc>Frederikskilde P-plads</desc>
+</wpt>
+<wpt lat="56.830944831" lon="9.842300244">
+  <name>Roldskov, Rebild Bakker</name>
+  <cmt>Roldskov, Rebild Bakker</cmt>
+  <desc>Roldskov, Rebild Bakker</desc>
+</wpt>
+<wpt lat="56.377827675" lon="9.695236472">
+  <name>Kanolandingsplads</name>
+  <cmt>Kanolandingsplads</cmt>
+  <desc>Kanolandingsplads</desc>
+</wpt>
+<wpt lat="56.252157435" lon="8.511255826">
+  <name>Toilet ved Fuglsang bro</name>
+  <cmt>Toilet ved Fuglsang bro</cmt>
+  <desc>Toilet ved Fuglsang bro</desc>
+</wpt>
+<wpt lat="56.398039487" lon="9.363433821">
+  <name>Skytteholm</name>
+  <cmt>Skytteholm</cmt>
+  <desc>Skytteholm</desc>
+</wpt>
+<wpt lat="56.486475803" lon="8.299562671">
+  <name>Klosterheden, Staldhøjevej</name>
+  <cmt>Klosterheden, Staldhøjevej</cmt>
+  <desc>Klosterheden, Staldhøjevej</desc>
+</wpt>
+<wpt lat="56.038606744" lon="9.691388468">
+  <name>Klostermølle, syd</name>
+  <cmt>Klostermølle, syd</cmt>
+  <desc>Klostermølle, syd</desc>
+</wpt>
+<wpt lat="56.392581581" lon="9.342874385">
+  <name>Hald Laden</name>
+  <cmt>Hald Laden</cmt>
+  <desc>Hald Laden</desc>
+</wpt>
+<wpt lat="56.285523412" lon="8.182007260">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="56.469093379" lon="8.316146719">
+  <name>Toilet v/Risbæk Gl. Skole</name>
+  <cmt>Toilet v/Risbæk Gl. Skole</cmt>
+  <desc>Toilet v/Risbæk Gl. Skole</desc>
+</wpt>
+<wpt lat="56.283111082" lon="10.480588745">
+  <name>Egens vig</name>
+  <cmt>Egens vig</cmt>
+  <desc>Egens vig</desc>
+</wpt>
+<wpt lat="56.447546246" lon="9.959687192">
+  <name>Skovhuset, toiletter</name>
+  <cmt>Skovhuset, toiletter</cmt>
+  <desc>Skovhuset, toiletter</desc>
+</wpt>
+<wpt lat="56.210514817" lon="10.577305675">
+  <name>Mols Bjerge, Bogens Strand</name>
+  <cmt>Mols Bjerge, Bogens Strand</cmt>
+  <desc>Mols Bjerge, Bogens Strand</desc>
+</wpt>
+<wpt lat="56.220533146" lon="10.587216710">
+  <name>Mols Bjerge, Strandkær Strand</name>
+  <cmt>Mols Bjerge, Strandkær Strand</cmt>
+  <desc>Mols Bjerge, Strandkær Strand</desc>
+</wpt>
+<wpt lat="56.373384424" lon="9.325232479">
+  <name>Dollerup Bakker</name>
+  <cmt>Dollerup Bakker</cmt>
+  <desc>Dollerup Bakker</desc>
+</wpt>
+<wpt lat="56.229317723" lon="10.529005286">
+  <name>Agri Bavnehøj</name>
+  <cmt>Agri Bavnehøj</cmt>
+  <desc>Agri Bavnehøj</desc>
+</wpt>
+<wpt lat="56.217953473" lon="10.500895091">
+  <name>Molsbjerge, Porskær Stenhus</name>
+  <cmt>Molsbjerge, Porskær Stenhus</cmt>
+  <desc>Molsbjerge, Porskær Stenhus</desc>
+</wpt>
+<wpt lat="56.367555973" lon="9.331091458">
+  <name>Badeplads Dollerup</name>
+  <cmt>Badeplads Dollerup</cmt>
+  <desc>Badeplads Dollerup</desc>
+</wpt>
+<wpt lat="56.475443140" lon="9.847430960">
+  <name>Badepladsen</name>
+  <cmt>Badepladsen</cmt>
+  <desc>Badepladsen</desc>
+</wpt>
+<wpt lat="56.289515598" lon="8.128430945">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.014954542" lon="10.351899802">
+  <name>Præstens plantage</name>
+  <cmt>Præstens plantage</cmt>
+  <desc>Præstens plantage</desc>
+</wpt>
+<wpt lat="56.781090465" lon="9.862213519">
+  <name>Rold Skov, Sortemosehus</name>
+  <cmt>Rold Skov, Sortemosehus</cmt>
+  <desc>Rold Skov, Sortemosehus</desc>
+</wpt>
+<wpt lat="56.182311236" lon="10.540701963">
+  <name>Fuglsø strand</name>
+  <cmt>Fuglsø strand</cmt>
+  <desc>Fuglsø strand</desc>
+</wpt>
+<wpt lat="56.308044179" lon="8.155923280">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="55.268731223" lon="11.481154509">
+  <name>Hårslev toilet</name>
+  <cmt>Hårslev toilet</cmt>
+  <desc>Hårslev toilet</desc>
+</wpt>
+<wpt lat="55.298123950" lon="11.408957943">
+  <name>Dalmose toilet</name>
+  <cmt>Dalmose toilet</cmt>
+  <desc>Dalmose toilet</desc>
+</wpt>
+<wpt lat="54.823962905" lon="12.137528516">
+  <name>Handicaptoilet ved Hesnæs Havn</name>
+  <cmt>Handicaptoilet ved Hesnæs Havn</cmt>
+  <desc>Handicaptoilet ved Hesnæs Havn</desc>
+</wpt>
+<wpt lat="56.171749242" lon="9.480490880">
+  <name>Hvinningdal Grusgrav</name>
+  <cmt>Hvinningdal Grusgrav</cmt>
+  <desc>Hvinningdal Grusgrav</desc>
+</wpt>
+<wpt lat="55.813102320" lon="11.720724180">
+  <name>Kongsøre Skov, Sandskredsvej</name>
+  <cmt>Kongsøre Skov, Sandskredsvej</cmt>
+  <desc>Kongsøre Skov, Sandskredsvej</desc>
+</wpt>
+<wpt lat="55.742187931" lon="10.877051373">
+  <name>Røsnæs</name>
+  <cmt>Røsnæs</cmt>
+  <desc>Røsnæs</desc>
+</wpt>
+<wpt lat="55.951614668" lon="11.717748165">
+  <name>Rørvig Sandflugtsplantage, Telegrafvej</name>
+  <cmt>Rørvig Sandflugtsplantage, Telegrafvej</cmt>
+  <desc>Rørvig Sandflugtsplantage, Telegrafvej</desc>
+</wpt>
+<wpt lat="55.556002516" lon="11.896073266">
+  <name>Avnstrup, Bidstrup Skovene</name>
+  <cmt>Avnstrup, Bidstrup Skovene</cmt>
+  <desc>Avnstrup, Bidstrup Skovene</desc>
+</wpt>
+<wpt lat="56.894409854" lon="9.240611637">
+  <name>Vilsted Sø</name>
+  <cmt>Vilsted Sø</cmt>
+  <desc>Vilsted Sø</desc>
+</wpt>
+<wpt lat="56.901460513" lon="9.291930954">
+  <name>Vilsted Sø</name>
+  <cmt>Vilsted Sø</cmt>
+  <desc>Vilsted Sø</desc>
+</wpt>
+<wpt lat="55.255189996" lon="11.672836577">
+  <name>Fodby toilet</name>
+  <cmt>Fodby toilet</cmt>
+  <desc>Fodby toilet</desc>
+</wpt>
+<wpt lat="55.706879722" lon="9.266283899">
+  <name>Gøddinggård Skov</name>
+  <cmt>Gøddinggård Skov</cmt>
+  <desc>Gøddinggård Skov</desc>
+</wpt>
+<wpt lat="55.675300296" lon="9.347243657">
+  <name>Ravning Station</name>
+  <cmt>Ravning Station</cmt>
+  <desc>Ravning Station</desc>
+</wpt>
+<wpt lat="55.676255639" lon="9.391108078">
+  <name>Vingsted Historiske Værksted</name>
+  <cmt>Vingsted Historiske Værksted</cmt>
+  <desc>Vingsted Historiske Værksted</desc>
+</wpt>
+<wpt lat="55.648926239" lon="9.310987022">
+  <name>Tørskind Grusgrav</name>
+  <cmt>Tørskind Grusgrav</cmt>
+  <desc>Tørskind Grusgrav</desc>
+</wpt>
+<wpt lat="55.627435485" lon="9.263839224">
+  <name>Nybjerg Mølle</name>
+  <cmt>Nybjerg Mølle</cmt>
+  <desc>Nybjerg Mølle</desc>
+</wpt>
+<wpt lat="55.670457812" lon="9.173075432">
+  <name>Frederikshåb Plantage</name>
+  <cmt>Frederikshåb Plantage</cmt>
+  <desc>Frederikshåb Plantage</desc>
+</wpt>
+<wpt lat="55.879035635" lon="10.057317324">
+  <name>Sondrup Strand</name>
+  <cmt>Sondrup Strand</cmt>
+  <desc>Sondrup Strand</desc>
+</wpt>
+<wpt lat="55.350967784" lon="11.588731052">
+  <name>Hørhaven, Vinstrup</name>
+  <cmt>Hørhaven, Vinstrup</cmt>
+  <desc>Hørhaven, Vinstrup</desc>
+</wpt>
+<wpt lat="55.432649176" lon="9.639717761">
+  <name>Skibelund</name>
+  <cmt>Skibelund</cmt>
+  <desc>Skibelund</desc>
+</wpt>
+<wpt lat="55.516070452" lon="9.387855158">
+  <name>Brødsgård</name>
+  <cmt>Brødsgård</cmt>
+  <desc>Brødsgård</desc>
+</wpt>
+<wpt lat="56.393203133" lon="8.839437797">
+  <name>Off. toilet</name>
+  <cmt>Off. toilet</cmt>
+  <desc>Off. toilet</desc>
+</wpt>
+<wpt lat="56.018752826" lon="9.377461748">
+  <name>Toilet Palsgård Skov</name>
+  <cmt>Toilet Palsgård Skov</cmt>
+  <desc>Toilet Palsgård Skov</desc>
+</wpt>
+<wpt lat="55.944141512" lon="9.250265518">
+  <name>Toilet Hastrup Plantage</name>
+  <cmt>Toilet Hastrup Plantage</cmt>
+  <desc>Toilet Hastrup Plantage</desc>
+</wpt>
+<wpt lat="56.697588711" lon="8.881498526">
+  <name>&quot;Raketlokum&quot; ved Harre Vig</name>
+  <cmt>&quot;Raketlokum&quot; ved Harre Vig</cmt>
+  <desc>&quot;Raketlokum&quot; ved Harre Vig</desc>
+</wpt>
+<wpt lat="56.837226651" lon="8.994968273">
+  <name>Toilet v. Emmelstenhus.</name>
+  <cmt>Toilet v. Emmelstenhus.</cmt>
+  <desc>Toilet v. Emmelstenhus.</desc>
+</wpt>
+<wpt lat="56.843057133" lon="9.003671929">
+  <name>Off. toilet v. Østklinten</name>
+  <cmt>Off. toilet v. Østklinten</cmt>
+  <desc>Off. toilet v. Østklinten</desc>
+</wpt>
+<wpt lat="56.844017240" lon="9.017343749">
+  <name>Off. toilet v. Langstedhuller</name>
+  <cmt>Off. toilet v. Langstedhuller</cmt>
+  <desc>Off. toilet v. Langstedhuller</desc>
+</wpt>
+<wpt lat="55.352559899" lon="11.265168727">
+  <name>Bakkely skov ved Vemmelev</name>
+  <cmt>Bakkely skov ved Vemmelev</cmt>
+  <desc>Bakkely skov ved Vemmelev</desc>
+</wpt>
+<wpt lat="55.362812333" lon="11.147881655">
+  <name>Højbjerg v. Korsør</name>
+  <cmt>Højbjerg v. Korsør</cmt>
+  <desc>Højbjerg v. Korsør</desc>
+</wpt>
+<wpt lat="55.383528238" lon="11.535043884">
+  <name>Kongskilde, Møllebækken</name>
+  <cmt>Kongskilde, Møllebækken</cmt>
+  <desc>Kongskilde, Møllebækken</desc>
+</wpt>
+<wpt lat="55.379302357" lon="11.553228966">
+  <name>Frederikskilde skov, Tystrup sø</name>
+  <cmt>Frederikskilde skov, Tystrup sø</cmt>
+  <desc>Frederikskilde skov, Tystrup sø</desc>
+</wpt>
+<wpt lat="55.310583189" lon="11.169687449">
+  <name>Højbjerg ved Korsør</name>
+  <cmt>Højbjerg ved Korsør</cmt>
+  <desc>Højbjerg ved Korsør</desc>
+</wpt>
+<wpt lat="55.349819877" lon="11.593688630">
+  <name>Hørhavegården</name>
+  <cmt>Hørhavegården</cmt>
+  <desc>Hørhavegården</desc>
+</wpt>
+<wpt lat="55.347894157" lon="11.596323345">
+  <name>Hørhaven, Tystrup sø</name>
+  <cmt>Hørhaven, Tystrup sø</cmt>
+  <desc>Hørhaven, Tystrup sø</desc>
+</wpt>
+<wpt lat="55.248576125" lon="11.247967690">
+  <name>Vasebro, Skælskør</name>
+  <cmt>Vasebro, Skælskør</cmt>
+  <desc>Vasebro, Skælskør</desc>
+</wpt>
+<wpt lat="55.084352359" lon="11.762615709">
+  <name>Avnø</name>
+  <cmt>Avnø</cmt>
+  <desc>Avnø</desc>
+</wpt>
+<wpt lat="54.893559767" lon="11.337422699">
+  <name>Bavnehøj</name>
+  <cmt>Bavnehøj</cmt>
+  <desc>Bavnehøj</desc>
+</wpt>
+<wpt lat="54.827681961" lon="11.955452007">
+  <name>Hannenovskov, Falster Virkethus</name>
+  <cmt>Hannenovskov, Falster Virkethus</cmt>
+  <desc>Hannenovskov, Falster Virkethus</desc>
+</wpt>
+<wpt lat="55.037420394" lon="12.283973598">
+  <name>Møn, Ulvshale Strandpark</name>
+  <cmt>Møn, Ulvshale Strandpark</cmt>
+  <desc>Møn, Ulvshale Strandpark</desc>
+</wpt>
+<wpt lat="55.045348042" lon="12.258002373">
+  <name>Møn, Ulvshalegård</name>
+  <cmt>Møn, Ulvshalegård</cmt>
+  <desc>Møn, Ulvshalegård</desc>
+</wpt>
+<wpt lat="55.376948218" lon="11.544994561">
+  <name>Frederikskilde Skov ved Tystrup sø</name>
+  <cmt>Frederikskilde Skov ved Tystrup sø</cmt>
+  <desc>Frederikskilde Skov ved Tystrup sø</desc>
+</wpt>
+<wpt lat="55.350294196" lon="11.588702859">
+  <name>Hørhaven ved Tystrup sø</name>
+  <cmt>Hørhaven ved Tystrup sø</cmt>
+  <desc>Hørhaven ved Tystrup sø</desc>
+</wpt>
+<wpt lat="55.376267530" lon="11.538825789">
+  <name>Kongskilde Friluftsgård</name>
+  <cmt>Kongskilde Friluftsgård</cmt>
+  <desc>Kongskilde Friluftsgård</desc>
+</wpt>
+<wpt lat="54.803012357" lon="12.083592322">
+  <name>Spejderstenen</name>
+  <cmt>Spejderstenen</cmt>
+  <desc>Spejderstenen</desc>
+</wpt>
+<wpt lat="55.075026904" lon="11.772627030">
+  <name>Avnø, Nokkeskoven</name>
+  <cmt>Avnø, Nokkeskoven</cmt>
+  <desc>Avnø, Nokkeskoven</desc>
+</wpt>
+<wpt lat="55.008487998" lon="12.299833001">
+  <name>Mosehældgård, Udby på Møn</name>
+  <cmt>Mosehældgård, Udby på Møn</cmt>
+  <desc>Mosehældgård, Udby på Møn</desc>
+</wpt>
+<wpt lat="54.962681216" lon="12.548773642">
+  <name>Møns Klint shelterplads</name>
+  <cmt>Møns Klint shelterplads</cmt>
+  <desc>Møns Klint shelterplads</desc>
+</wpt>
+<wpt lat="55.060263277" lon="12.123340795">
+  <name>Sandvig, Præstø</name>
+  <cmt>Sandvig, Præstø</cmt>
+  <desc>Sandvig, Præstø</desc>
+</wpt>
+<wpt lat="55.133046488" lon="12.011552247">
+  <name>Faksinge skov shelterplads</name>
+  <cmt>Faksinge skov shelterplads</cmt>
+  <desc>Faksinge skov shelterplads</desc>
+</wpt>
+<wpt lat="55.353641128" lon="11.670822775">
+  <name>Glumsø skov shelterplads</name>
+  <cmt>Glumsø skov shelterplads</cmt>
+  <desc>Glumsø skov shelterplads</desc>
+</wpt>
+<wpt lat="55.044129705" lon="12.204022757">
+  <name>Hyldevang shelterplads, Nyord, Møn</name>
+  <cmt>Hyldevang shelterplads, Nyord, Møn</cmt>
+  <desc>Hyldevang shelterplads, Nyord, Møn</desc>
+</wpt>
+<wpt lat="56.722918552" lon="9.092306007">
+  <name>Off. toilet, Brokholm Naturcenter</name>
+  <cmt>Off. toilet, Brokholm Naturcenter</cmt>
+  <desc>Off. toilet, Brokholm Naturcenter</desc>
+</wpt>
+<wpt lat="56.650442710" lon="9.150090683">
+  <name>Off. toilet på Lundø</name>
+  <cmt>Off. toilet på Lundø</cmt>
+  <desc>Off. toilet på Lundø</desc>
+</wpt>
+<wpt lat="56.665721895" lon="9.086651514">
+  <name>Off. toilet</name>
+  <cmt>Off. toilet</cmt>
+  <desc>Off. toilet</desc>
+</wpt>
+<wpt lat="55.902739407" lon="9.399653480">
+  <name>Toilet Gudenåens Udspring</name>
+  <cmt>Toilet Gudenåens Udspring</cmt>
+  <desc>Toilet Gudenåens Udspring</desc>
+</wpt>
+<wpt lat="55.354798155" lon="11.390642999">
+  <name>Sludstrup handicaptoilet</name>
+  <cmt>Sludstrup handicaptoilet</cmt>
+  <desc>Sludstrup handicaptoilet</desc>
+</wpt>
+<wpt lat="56.095566884" lon="9.747816070">
+  <name>Toilet - Skimminghøj</name>
+  <cmt>Toilet - Skimminghøj</cmt>
+  <desc>Toilet - Skimminghøj</desc>
+</wpt>
+<wpt lat="55.258852393" lon="11.385600233">
+  <name>Ved Lungen handicaptoilet</name>
+  <cmt>Ved Lungen handicaptoilet</cmt>
+  <desc>Ved Lungen handicaptoilet</desc>
+</wpt>
+<wpt lat="55.060219486" lon="10.636894952">
+  <name>Toilet Christiansminde</name>
+  <cmt>Toilet Christiansminde</cmt>
+  <desc>Toilet Christiansminde</desc>
+</wpt>
+<wpt lat="55.059993379" lon="10.637668637">
+  <name>Toilet ved legeplads, Christiansminde</name>
+  <cmt>Toilet ved legeplads, Christiansminde</cmt>
+  <desc>Toilet ved legeplads, Christiansminde</desc>
+</wpt>
+<wpt lat="55.058692061" lon="10.640199031">
+  <name>Toilet Engen Christiansminde</name>
+  <cmt>Toilet Engen Christiansminde</cmt>
+  <desc>Toilet Engen Christiansminde</desc>
+</wpt>
+<wpt lat="55.031162086" lon="9.576436498">
+  <name>Varnæs</name>
+  <cmt>Varnæs</cmt>
+  <desc>Varnæs</desc>
+</wpt>
+<wpt lat="54.857575985" lon="9.757980188">
+  <name>Skelde Kobbelskov</name>
+  <cmt>Skelde Kobbelskov</cmt>
+  <desc>Skelde Kobbelskov</desc>
+</wpt>
+<wpt lat="54.974757083" lon="9.761966742">
+  <name>Arnkil Skov</name>
+  <cmt>Arnkil Skov</cmt>
+  <desc>Arnkil Skov</desc>
+</wpt>
+<wpt lat="54.902147300" lon="9.874877364">
+  <name>Lambjerg Indtægt</name>
+  <cmt>Lambjerg Indtægt</cmt>
+  <desc>Lambjerg Indtægt</desc>
+</wpt>
+<wpt lat="54.839474569" lon="9.331825351">
+  <name>Frøslev Plantage</name>
+  <cmt>Frøslev Plantage</cmt>
+  <desc>Frøslev Plantage</desc>
+</wpt>
+<wpt lat="54.846236327" lon="9.330448093">
+  <name>Frøslev Plantage v. primitiv overnatningsplads</name>
+  <cmt>Frøslev Plantage v. primitiv overnatningsplads</cmt>
+  <desc>Frøslev Plantage v. primitiv overnatningsplads</desc>
+</wpt>
+<wpt lat="54.917013270" lon="9.568984767">
+  <name>Rinkenæs Skov, Syvstjernen</name>
+  <cmt>Rinkenæs Skov, Syvstjernen</cmt>
+  <desc>Rinkenæs Skov, Syvstjernen</desc>
+</wpt>
+<wpt lat="54.890312016" lon="9.363298904">
+  <name>Bommerlund Plantage</name>
+  <cmt>Bommerlund Plantage</cmt>
+  <desc>Bommerlund Plantage</desc>
+</wpt>
+<wpt lat="55.017939618" lon="9.906003077">
+  <name>Nørreskoven, Als</name>
+  <cmt>Nørreskoven, Als</cmt>
+  <desc>Nørreskoven, Als</desc>
+</wpt>
+<wpt lat="55.232402562" lon="9.387778932">
+  <name>Teglholt</name>
+  <cmt>Teglholt</cmt>
+  <desc>Teglholt</desc>
+</wpt>
+<wpt lat="55.283396537" lon="9.497476296">
+  <name>Haderslev Vesterskov</name>
+  <cmt>Haderslev Vesterskov</cmt>
+  <desc>Haderslev Vesterskov</desc>
+</wpt>
+<wpt lat="55.230490312" lon="9.445181060">
+  <name>Haderslev Sønderskov</name>
+  <cmt>Haderslev Sønderskov</cmt>
+  <desc>Haderslev Sønderskov</desc>
+</wpt>
+<wpt lat="55.027708266" lon="9.876546537">
+  <name>Nørreskoven, Als</name>
+  <cmt>Nørreskoven, Als</cmt>
+  <desc>Nørreskoven, Als</desc>
+</wpt>
+<wpt lat="55.273148016" lon="14.760558185">
+  <name>Toiletterne ved Slotsgården, Hammershus</name>
+  <cmt>Toiletterne ved Slotsgården, Hammershus</cmt>
+  <desc>Toiletterne ved Slotsgården, Hammershus</desc>
+</wpt>
+<wpt lat="56.125617502" lon="9.615041449">
+  <name>Sønderskoven, Slåensø</name>
+  <cmt>Sønderskoven, Slåensø</cmt>
+  <desc>Sønderskoven, Slåensø</desc>
+</wpt>
+<wpt lat="55.947002238" lon="8.587337245">
+  <name>Toilet ved naturcenter Skjern Å</name>
+  <cmt>Toilet ved naturcenter Skjern Å</cmt>
+  <desc>Toilet ved naturcenter Skjern Å</desc>
+</wpt>
+<wpt lat="55.904559824" lon="8.400169552">
+  <name>Toilet ved naturcenter Skjern Enge</name>
+  <cmt>Toilet ved naturcenter Skjern Enge</cmt>
+  <desc>Toilet ved naturcenter Skjern Enge</desc>
+</wpt>
+<wpt lat="56.180171832" lon="9.629735279">
+  <name>Resenbro dagrasteplads.</name>
+  <cmt>Resenbro dagrasteplads.</cmt>
+  <desc>Resenbro dagrasteplads.</desc>
+</wpt>
+<wpt lat="55.173997565" lon="9.985377314">
+  <name>Bobakkerne på Helnæs</name>
+  <cmt>Bobakkerne på Helnæs</cmt>
+  <desc>Bobakkerne på Helnæs</desc>
+</wpt>
+<wpt lat="55.126389355" lon="10.254878527">
+  <name>Toilet Svanninge Bakker</name>
+  <cmt>Toilet Svanninge Bakker</cmt>
+  <desc>Toilet Svanninge Bakker</desc>
+</wpt>
+<wpt lat="55.607169855" lon="10.607214212">
+  <name>Toilet Jøvet</name>
+  <cmt>Toilet Jøvet</cmt>
+  <desc>Toilet Jøvet</desc>
+</wpt>
+<wpt lat="55.119499263" lon="10.249346757">
+  <name>Toilet Gåsebjergsand</name>
+  <cmt>Toilet Gåsebjergsand</cmt>
+  <desc>Toilet Gåsebjergsand</desc>
+</wpt>
+<wpt lat="55.137051622" lon="10.926563433">
+  <name>Toilet Hollænderhus</name>
+  <cmt>Toilet Hollænderhus</cmt>
+  <desc>Toilet Hollænderhus</desc>
+</wpt>
+<wpt lat="56.240303506" lon="9.669831845">
+  <name>Tvilum Bro dagrasteplads</name>
+  <cmt>Tvilum Bro dagrasteplads</cmt>
+  <desc>Tvilum Bro dagrasteplads</desc>
+</wpt>
+<wpt lat="54.823334807" lon="10.628465160">
+  <name>Toilet Ristinge Strand</name>
+  <cmt>Toilet Ristinge Strand</cmt>
+  <desc>Toilet Ristinge Strand</desc>
+</wpt>
+<wpt lat="54.816610000" lon="10.640614568">
+  <name>Toilet Bjørnehøj Strand</name>
+  <cmt>Toilet Bjørnehøj Strand</cmt>
+  <desc>Toilet Bjørnehøj Strand</desc>
+</wpt>
+<wpt lat="56.297051205" lon="9.669870799">
+  <name>Kongensbro dagrasteplads</name>
+  <cmt>Kongensbro dagrasteplads</cmt>
+  <desc>Kongensbro dagrasteplads</desc>
+</wpt>
+<wpt lat="54.866685425" lon="10.335945990">
+  <name>Toilet Voderup Klint</name>
+  <cmt>Toilet Voderup Klint</cmt>
+  <desc>Toilet Voderup Klint</desc>
+</wpt>
+<wpt lat="54.870299463" lon="10.332574720">
+  <name>Toilet primitiv overnatningsplads Voderup Klint</name>
+  <cmt>Toilet primitiv overnatningsplads Voderup Klint</cmt>
+  <desc>Toilet primitiv overnatningsplads Voderup Klint</desc>
+</wpt>
+<wpt lat="54.839151230" lon="10.454520327">
+  <name>Toilet, Drejskoven Vest</name>
+  <cmt>Toilet, Drejskoven Vest</cmt>
+  <desc>Toilet, Drejskoven Vest</desc>
+</wpt>
+<wpt lat="55.175508350" lon="10.249983302">
+  <name>Toilet Trente Mølle</name>
+  <cmt>Toilet Trente Mølle</cmt>
+  <desc>Toilet Trente Mølle</desc>
+</wpt>
+<wpt lat="55.338379633" lon="10.114939578">
+  <name>Toilet Frøbjerg Bavnehøj</name>
+  <cmt>Toilet Frøbjerg Bavnehøj</cmt>
+  <desc>Toilet Frøbjerg Bavnehøj</desc>
+</wpt>
+<wpt lat="55.549542850" lon="9.806380943">
+  <name>Toilet Røjle Klint</name>
+  <cmt>Toilet Røjle Klint</cmt>
+  <desc>Toilet Røjle Klint</desc>
+</wpt>
+<wpt lat="55.260098009" lon="10.179906503">
+  <name>Toilet Lærkedal</name>
+  <cmt>Toilet Lærkedal</cmt>
+  <desc>Toilet Lærkedal</desc>
+</wpt>
+<wpt lat="55.621440834" lon="10.305203299">
+  <name>Toilet Flyvesandet</name>
+  <cmt>Toilet Flyvesandet</cmt>
+  <desc>Toilet Flyvesandet</desc>
+</wpt>
+<wpt lat="55.591100210" lon="10.405436399">
+  <name>Toilet Fuglsanggård</name>
+  <cmt>Toilet Fuglsanggård</cmt>
+  <desc>Toilet Fuglsanggård</desc>
+</wpt>
+<wpt lat="55.346800835" lon="10.144019611">
+  <name>Toilet Brændholtbjerg</name>
+  <cmt>Toilet Brændholtbjerg</cmt>
+  <desc>Toilet Brændholtbjerg</desc>
+</wpt>
+<wpt lat="56.860032185" lon="8.363577851">
+  <name>Hvidbjerg ved lejrplads</name>
+  <cmt>Hvidbjerg ved lejrplads</cmt>
+  <desc>Hvidbjerg ved lejrplads</desc>
+</wpt>
+<wpt lat="56.869189329" lon="8.383796538">
+  <name>Hvidbjerg ved Per Madsens Kjær</name>
+  <cmt>Hvidbjerg ved Per Madsens Kjær</cmt>
+  <desc>Hvidbjerg ved Per Madsens Kjær</desc>
+</wpt>
+<wpt lat="56.905322692" lon="8.346699459">
+  <name>Stenbjerg ved shelterplads</name>
+  <cmt>Stenbjerg ved shelterplads</cmt>
+  <desc>Stenbjerg ved shelterplads</desc>
+</wpt>
+<wpt lat="56.902250366" lon="8.380247585">
+  <name>Stenbjerg ved Kystvejen</name>
+  <cmt>Stenbjerg ved Kystvejen</cmt>
+  <desc>Stenbjerg ved Kystvejen</desc>
+</wpt>
+<wpt lat="56.913374977" lon="8.384415565">
+  <name>Stenbjerg ved Stenbjergvej</name>
+  <cmt>Stenbjerg ved Stenbjergvej</cmt>
+  <desc>Stenbjerg ved Stenbjergvej</desc>
+</wpt>
+<wpt lat="56.824500223" lon="8.262282752">
+  <name>Lodbjerg Fyr</name>
+  <cmt>Lodbjerg Fyr</cmt>
+  <desc>Lodbjerg Fyr</desc>
+</wpt>
+<wpt lat="56.723720405" lon="8.230251282">
+  <name>Agger Tange</name>
+  <cmt>Agger Tange</cmt>
+  <desc>Agger Tange</desc>
+</wpt>
+<wpt lat="56.815451667" lon="8.307475529">
+  <name>Lodbjergvej</name>
+  <cmt>Lodbjergvej</cmt>
+  <desc>Lodbjergvej</desc>
+</wpt>
+<wpt lat="56.801162616" lon="8.398454648">
+  <name>Rønhede</name>
+  <cmt>Rønhede</cmt>
+  <desc>Rønhede</desc>
+</wpt>
+<wpt lat="56.856483646" lon="8.372477055">
+  <name>Hvidbjerg Syd</name>
+  <cmt>Hvidbjerg Syd</cmt>
+  <desc>Hvidbjerg Syd</desc>
+</wpt>
+<wpt lat="56.915961141" lon="8.441564239">
+  <name>Stenbjerg ved Tyskebakken</name>
+  <cmt>Stenbjerg ved Tyskebakken</cmt>
+  <desc>Stenbjerg ved Tyskebakken</desc>
+</wpt>
+<wpt lat="56.937958535" lon="8.349678892">
+  <name>Stenbjerg Landingsplads</name>
+  <cmt>Stenbjerg Landingsplads</cmt>
+  <desc>Stenbjerg Landingsplads</desc>
+</wpt>
+<wpt lat="56.999596876" lon="8.568053753">
+  <name>Vandet ved Lejrplads på Tandlægensvej</name>
+  <cmt>Vandet ved Lejrplads på Tandlægensvej</cmt>
+  <desc>Vandet ved Lejrplads på Tandlægensvej</desc>
+</wpt>
+<wpt lat="56.964951476" lon="8.406853428">
+  <name>Tvorup Vest ved Shelter</name>
+  <cmt>Tvorup Vest ved Shelter</cmt>
+  <desc>Tvorup Vest ved Shelter</desc>
+</wpt>
+<wpt lat="56.980225349" lon="8.409078593">
+  <name>Tvorup ved Bøgsted Rende</name>
+  <cmt>Tvorup ved Bøgsted Rende</cmt>
+  <desc>Tvorup ved Bøgsted Rende</desc>
+</wpt>
+<wpt lat="56.971337915" lon="8.477137865">
+  <name>Tvorup Kirke ved shelter</name>
+  <cmt>Tvorup Kirke ved shelter</cmt>
+  <desc>Tvorup Kirke ved shelter</desc>
+</wpt>
+<wpt lat="57.035568283" lon="8.467980939">
+  <name>Klitmøller ved Trøjborg</name>
+  <cmt>Klitmøller ved Trøjborg</cmt>
+  <desc>Klitmøller ved Trøjborg</desc>
+</wpt>
+<wpt lat="57.023944159" lon="8.563389828">
+  <name>Vilsbøl ved skovlegeplads</name>
+  <cmt>Vilsbøl ved skovlegeplads</cmt>
+  <desc>Vilsbøl ved skovlegeplads</desc>
+</wpt>
+<wpt lat="57.028985915" lon="8.593330735">
+  <name>Vilsbøl ved Nors Sø</name>
+  <cmt>Vilsbøl ved Nors Sø</cmt>
+  <desc>Vilsbøl ved Nors Sø</desc>
+</wpt>
+<wpt lat="57.041086022" lon="8.615874762">
+  <name>Tved ved Nors Sø</name>
+  <cmt>Tved ved Nors Sø</cmt>
+  <desc>Tved ved Nors Sø</desc>
+</wpt>
+<wpt lat="57.079606609" lon="8.627585453">
+  <name>Tved ved shelter i Sårup</name>
+  <cmt>Tved ved shelter i Sårup</cmt>
+  <desc>Tved ved shelter i Sårup</desc>
+</wpt>
+<wpt lat="57.100756904" lon="8.730669323">
+  <name>Vigsø Rallejer</name>
+  <cmt>Vigsø Rallejer</cmt>
+  <desc>Vigsø Rallejer</desc>
+</wpt>
+<wpt lat="57.038810982" lon="8.895970330">
+  <name>Østerild ved Vesløs Huse</name>
+  <cmt>Østerild ved Vesløs Huse</cmt>
+  <desc>Østerild ved Vesløs Huse</desc>
+</wpt>
+<wpt lat="57.096762443" lon="8.740683456">
+  <name>Vigsø ved shelter</name>
+  <cmt>Vigsø ved shelter</cmt>
+  <desc>Vigsø ved shelter</desc>
+</wpt>
+<wpt lat="57.156640884" lon="9.027193491">
+  <name>Bulbjerg ved P-plads</name>
+  <cmt>Bulbjerg ved P-plads</cmt>
+  <desc>Bulbjerg ved P-plads</desc>
+</wpt>
+<wpt lat="57.147215931" lon="9.033417179">
+  <name>Bulbjerg ved lejrplads</name>
+  <cmt>Bulbjerg ved lejrplads</cmt>
+  <desc>Bulbjerg ved lejrplads</desc>
+</wpt>
+<wpt lat="57.126706023" lon="9.037164730">
+  <name>Lild ved shelter</name>
+  <cmt>Lild ved shelter</cmt>
+  <desc>Lild ved shelter</desc>
+</wpt>
+<wpt lat="57.133328377" lon="9.129389432">
+  <name>Vester Thorup ved skovlegeplads</name>
+  <cmt>Vester Thorup ved skovlegeplads</cmt>
+  <desc>Vester Thorup ved skovlegeplads</desc>
+</wpt>
+<wpt lat="57.115585834" lon="9.278751480">
+  <name>Kollerup ved shelter</name>
+  <cmt>Kollerup ved shelter</cmt>
+  <desc>Kollerup ved shelter</desc>
+</wpt>
+<wpt lat="57.152556278" lon="9.329030509">
+  <name>Svinkløv Badehotel</name>
+  <cmt>Svinkløv Badehotel</cmt>
+  <desc>Svinkløv Badehotel</desc>
+</wpt>
+<wpt lat="57.126562722" lon="9.418094847">
+  <name>Langdal ved Lerup Kirk</name>
+  <cmt>Langdal ved Lerup Kirk</cmt>
+  <desc>Langdal ved Lerup Kirk</desc>
+</wpt>
+<wpt lat="57.136623712" lon="9.459315676">
+  <name>Langdal ved skovlegeplads</name>
+  <cmt>Langdal ved skovlegeplads</cmt>
+  <desc>Langdal ved skovlegeplads</desc>
+</wpt>
+<wpt lat="55.123821977" lon="14.918388962">
+  <name>Toilet i Hareløkkerne</name>
+  <cmt>Toilet i Hareløkkerne</cmt>
+  <desc>Toilet i Hareløkkerne</desc>
+</wpt>
+<wpt lat="56.060655432" lon="9.990815128">
+  <name>Toilet Stilling Sø</name>
+  <cmt>Toilet Stilling Sø</cmt>
+  <desc>Toilet Stilling Sø</desc>
+</wpt>
+<wpt lat="55.976735284" lon="9.831014345">
+  <name>Toilet Ejer Bavnehøj</name>
+  <cmt>Toilet Ejer Bavnehøj</cmt>
+  <desc>Toilet Ejer Bavnehøj</desc>
+</wpt>
+<wpt lat="55.119502699" lon="14.700608900">
+  <name>Toilet Blykobbe-plantage</name>
+  <cmt>Toilet Blykobbe-plantage</cmt>
+  <desc>Toilet Blykobbe-plantage</desc>
+</wpt>
+<wpt lat="56.028692274" lon="9.792158570">
+  <name>Toilet Hem Odde</name>
+  <cmt>Toilet Hem Odde</cmt>
+  <desc>Toilet Hem Odde</desc>
+</wpt>
+<wpt lat="56.045759863" lon="9.852147040">
+  <name>Toilet ved Vædebro</name>
+  <cmt>Toilet ved Vædebro</cmt>
+  <desc>Toilet ved Vædebro</desc>
+</wpt>
+<wpt lat="56.022008801" lon="9.926115036">
+  <name>Toilet, Skanderborg Søbad</name>
+  <cmt>Toilet, Skanderborg Søbad</cmt>
+  <desc>Toilet, Skanderborg Søbad</desc>
+</wpt>
+<wpt lat="55.269995869" lon="14.760778416">
+  <name>Toilet ved Gammel camping</name>
+  <cmt>Toilet ved Gammel camping</cmt>
+  <desc>Toilet ved Gammel camping</desc>
+</wpt>
+<wpt lat="56.109618494" lon="9.684460243">
+  <name>Offentlig toilet ved Hotel Julsø</name>
+  <cmt>Offentlig toilet ved Hotel Julsø</cmt>
+  <desc>Offentlig toilet ved Hotel Julsø</desc>
+</wpt>
+<wpt lat="56.103038145" lon="9.686674667">
+  <name>Toilet ved Himmelbjerget</name>
+  <cmt>Toilet ved Himmelbjerget</cmt>
+  <desc>Toilet ved Himmelbjerget</desc>
+</wpt>
+<wpt lat="56.216681108" lon="9.665066180">
+  <name>Toilet ved Sminge Rensningsanlæg</name>
+  <cmt>Toilet ved Sminge Rensningsanlæg</cmt>
+  <desc>Toilet ved Sminge Rensningsanlæg</desc>
+</wpt>
+<wpt lat="56.025183204" lon="9.758617065">
+  <name>Toilet på p.pladsen i Dørup ved den gamle hestestald</name>
+  <cmt>Toilet på p.pladsen i Dørup ved den gamle hestestald</cmt>
+  <desc>Toilet på p.pladsen i Dørup ved den gamle hestestald</desc>
+</wpt>
+<wpt lat="55.334456897" lon="9.878654996">
+  <name>Toilet Sandager Næs</name>
+  <cmt>Toilet Sandager Næs</cmt>
+  <desc>Toilet Sandager Næs</desc>
+</wpt>
+<wpt lat="55.300027763" lon="9.892636952">
+  <name>Toilet Aborg Strand</name>
+  <cmt>Toilet Aborg Strand</cmt>
+  <desc>Toilet Aborg Strand</desc>
+</wpt>
+<wpt lat="55.236254403" lon="9.910456438">
+  <name>Toilet Saltofte Strand</name>
+  <cmt>Toilet Saltofte Strand</cmt>
+  <desc>Toilet Saltofte Strand</desc>
+</wpt>
+<wpt lat="55.133320352" lon="9.979136149">
+  <name>Toilet Helnæs Fyr</name>
+  <cmt>Toilet Helnæs Fyr</cmt>
+  <desc>Toilet Helnæs Fyr</desc>
+</wpt>
+<wpt lat="56.058648961" lon="9.913118063">
+  <name>Illerup Ådal Toilet</name>
+  <cmt>Illerup Ådal Toilet</cmt>
+  <desc>Illerup Ådal Toilet</desc>
+</wpt>
+<wpt lat="55.205006736" lon="9.990260015">
+  <name>Toilet Brydegaard Strand</name>
+  <cmt>Toilet Brydegaard Strand</cmt>
+  <desc>Toilet Brydegaard Strand</desc>
+</wpt>
+<wpt lat="55.382797980" lon="10.051236408">
+  <name>Toilet Aarup</name>
+  <cmt>Toilet Aarup</cmt>
+  <desc>Toilet Aarup</desc>
+</wpt>
+<wpt lat="55.164440082" lon="10.137646553">
+  <name>Toilet Damsbo Strand</name>
+  <cmt>Toilet Damsbo Strand</cmt>
+  <desc>Toilet Damsbo Strand</desc>
+</wpt>
+<wpt lat="55.237430116" lon="9.907039224">
+  <name>Toilet Saltofte Strand</name>
+  <cmt>Toilet Saltofte Strand</cmt>
+  <desc>Toilet Saltofte Strand</desc>
+</wpt>
+<wpt lat="56.226881569" lon="10.569267450">
+  <name>Mols Bjerge, Øvre Strandkær</name>
+  <cmt>Mols Bjerge, Øvre Strandkær</cmt>
+  <desc>Mols Bjerge, Øvre Strandkær</desc>
+</wpt>
+<wpt lat="55.223827103" lon="10.124766825">
+  <name>Toilet Linien Haarby</name>
+  <cmt>Toilet Linien Haarby</cmt>
+  <desc>Toilet Linien Haarby</desc>
+</wpt>
+<wpt lat="55.179111136" lon="10.043685204">
+  <name>Toilet Skovkrogen</name>
+  <cmt>Toilet Skovkrogen</cmt>
+  <desc>Toilet Skovkrogen</desc>
+</wpt>
+<wpt lat="55.186445602" lon="10.099776550">
+  <name>Toilet Nappen</name>
+  <cmt>Toilet Nappen</cmt>
+  <desc>Toilet Nappen</desc>
+</wpt>
+<wpt lat="55.385110768" lon="10.138195547">
+  <name>Toilet Vissenbjerg</name>
+  <cmt>Toilet Vissenbjerg</cmt>
+  <desc>Toilet Vissenbjerg</desc>
+</wpt>
+<wpt lat="55.386296247" lon="10.165933727">
+  <name>Toilet Vissenbjerg</name>
+  <cmt>Toilet Vissenbjerg</cmt>
+  <desc>Toilet Vissenbjerg</desc>
+</wpt>
+<wpt lat="55.434748841" lon="9.109237454">
+  <name>Toilet ved Frihedsbroen</name>
+  <cmt>Toilet ved Frihedsbroen</cmt>
+  <desc>Toilet ved Frihedsbroen</desc>
+</wpt>
+<wpt lat="55.608585044" lon="8.926615168">
+  <name>Toilet ved Hovborg</name>
+  <cmt>Toilet ved Hovborg</cmt>
+  <desc>Toilet ved Hovborg</desc>
+</wpt>
+<wpt lat="55.268002837" lon="9.883640226">
+  <name>Toilet Assens</name>
+  <cmt>Toilet Assens</cmt>
+  <desc>Toilet Assens</desc>
+</wpt>
+<wpt lat="55.581748000" lon="9.149445607">
+  <name>Toilet i tilknytning til overnatningsplads ved Bække</name>
+  <cmt>Toilet i tilknytning til overnatningsplads ved Bække</cmt>
+  <desc>Toilet i tilknytning til overnatningsplads ved Bække</desc>
+</wpt>
+<wpt lat="55.265445210" lon="9.902814577">
+  <name>Toilet Assens</name>
+  <cmt>Toilet Assens</cmt>
+  <desc>Toilet Assens</desc>
+</wpt>
+<wpt lat="55.269366063" lon="9.891429798">
+  <name>Toilet Assens</name>
+  <cmt>Toilet Assens</cmt>
+  <desc>Toilet Assens</desc>
+</wpt>
+<wpt lat="55.244067352" lon="9.892924142">
+  <name>Toilet Torøhuse</name>
+  <cmt>Toilet Torøhuse</cmt>
+  <desc>Toilet Torøhuse</desc>
+</wpt>
+<wpt lat="55.200761584" lon="9.988473475">
+  <name>Toilet Agernæs</name>
+  <cmt>Toilet Agernæs</cmt>
+  <desc>Toilet Agernæs</desc>
+</wpt>
+<wpt lat="55.267120498" lon="9.882629141">
+  <name>Toilet Assens</name>
+  <cmt>Toilet Assens</cmt>
+  <desc>Toilet Assens</desc>
+</wpt>
+<wpt lat="55.270659692" lon="9.898840588">
+  <name>Toilet Assens</name>
+  <cmt>Toilet Assens</cmt>
+  <desc>Toilet Assens</desc>
+</wpt>
+<wpt lat="55.274090502" lon="9.890528210">
+  <name>Toilet Assens</name>
+  <cmt>Toilet Assens</cmt>
+  <desc>Toilet Assens</desc>
+</wpt>
+<wpt lat="56.018534962" lon="9.508232135">
+  <name>Offentlig toilet Bryrup Langsø</name>
+  <cmt>Offentlig toilet Bryrup Langsø</cmt>
+  <desc>Offentlig toilet Bryrup Langsø</desc>
+</wpt>
+<wpt lat="56.136897328" lon="9.599661339">
+  <name>Toilet ved Sejs Ladeplads</name>
+  <cmt>Toilet ved Sejs Ladeplads</cmt>
+  <desc>Toilet ved Sejs Ladeplads</desc>
+</wpt>
+<wpt lat="56.124913895" lon="9.717210051">
+  <name>Toilet ved Laven Søplads.</name>
+  <cmt>Toilet ved Laven Søplads.</cmt>
+  <desc>Toilet ved Laven Søplads.</desc>
+</wpt>
+<wpt lat="56.145356736" lon="9.587480600">
+  <name>Toiletfaciliteter ved De Små Fisk</name>
+  <cmt>Toiletfaciliteter ved De Små Fisk</cmt>
+  <desc>Toiletfaciliteter ved De Små Fisk</desc>
+</wpt>
+<wpt lat="55.034542536" lon="14.995325022">
+  <name>Toilet i Lynggårdsskoven</name>
+  <cmt>Toilet i Lynggårdsskoven</cmt>
+  <desc>Toilet i Lynggårdsskoven</desc>
+</wpt>
+<wpt lat="55.122016506" lon="14.905914828">
+  <name>Toilet ved Christianshøj</name>
+  <cmt>Toilet ved Christianshøj</cmt>
+  <desc>Toilet ved Christianshøj</desc>
+</wpt>
+<wpt lat="55.121157070" lon="14.879098192">
+  <name>Toilet ved Arboretet</name>
+  <cmt>Toilet ved Arboretet</cmt>
+  <desc>Toilet ved Arboretet</desc>
+</wpt>
+<wpt lat="55.281220367" lon="14.760611064">
+  <name>Toilet ved Hammersøen</name>
+  <cmt>Toilet ved Hammersøen</cmt>
+  <desc>Toilet ved Hammersøen</desc>
+</wpt>
+<wpt lat="55.111875012" lon="14.889320805">
+  <name>Toilet på Rytterknægten</name>
+  <cmt>Toilet på Rytterknægten</cmt>
+  <desc>Toilet på Rytterknægten</desc>
+</wpt>
+<wpt lat="56.454376064" lon="10.078794368">
+  <name>Romalt Bakker</name>
+  <cmt>Romalt Bakker</cmt>
+  <desc>Romalt Bakker</desc>
+</wpt>
+<wpt lat="55.863797806" lon="9.564737476">
+  <name>Uldum Kær ved Kærvejen</name>
+  <cmt>Uldum Kær ved Kærvejen</cmt>
+  <desc>Uldum Kær ved Kærvejen</desc>
+</wpt>
+<wpt lat="56.287673820" lon="8.181105139">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="56.246476901" lon="8.385749681">
+  <name>Lystbæk Lejrplads - Toilet og bad</name>
+  <cmt>Lystbæk Lejrplads - Toilet og bad</cmt>
+  <desc>Lystbæk Lejrplads - Toilet og bad</desc>
+</wpt>
+<wpt lat="56.319751357" lon="8.135066547">
+  <name>Toilet ved Fjand Skovlegeplads</name>
+  <cmt>Toilet ved Fjand Skovlegeplads</cmt>
+  <desc>Toilet ved Fjand Skovlegeplads</desc>
+</wpt>
+<wpt lat="56.315248791" lon="8.123399135">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.303623572" lon="11.001254858">
+  <name>Toilet ved Storedal</name>
+  <cmt>Toilet ved Storedal</cmt>
+  <desc>Toilet ved Storedal</desc>
+</wpt>
+<wpt lat="55.228246121" lon="11.719298202">
+  <name>Even primitivt toilet</name>
+  <cmt>Even primitivt toilet</cmt>
+  <desc>Even primitivt toilet</desc>
+</wpt>
+<wpt lat="55.263486318" lon="11.761676054">
+  <name>Vridsløse primitivt toilet</name>
+  <cmt>Vridsløse primitivt toilet</cmt>
+  <desc>Vridsløse primitivt toilet</desc>
+</wpt>
+<wpt lat="55.212870772" lon="11.803967534">
+  <name>Rønnebæk primitivt toilet</name>
+  <cmt>Rønnebæk primitivt toilet</cmt>
+  <desc>Rønnebæk primitivt toilet</desc>
+</wpt>
+<wpt lat="55.260478885" lon="11.600737735">
+  <name>Hyllinge toilet</name>
+  <cmt>Hyllinge toilet</cmt>
+  <desc>Hyllinge toilet</desc>
+</wpt>
+<wpt lat="54.966196662" lon="12.548177390">
+  <name>Møns Klint</name>
+  <cmt>Møns Klint</cmt>
+  <desc>Møns Klint</desc>
+</wpt>
+<wpt lat="54.771875869" lon="11.861804112">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="54.771930962" lon="11.874295580">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="54.831750737" lon="11.931904867">
+  <name>WC</name>
+  <cmt>WC</cmt>
+  <desc>WC</desc>
+</wpt>
+<wpt lat="54.830735334" lon="11.935600155">
+  <name>WC</name>
+  <cmt>WC</cmt>
+  <desc>WC</desc>
+</wpt>
+<wpt lat="54.819247674" lon="11.942551108">
+  <name>WC</name>
+  <cmt>WC</cmt>
+  <desc>WC</desc>
+</wpt>
+<wpt lat="57.719660957" lon="10.510756957">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.714055099" lon="10.543526266">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.316869017" lon="11.046415560">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.315534171" lon="11.022843019">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.303432395" lon="11.003103784">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.298729212" lon="11.002217309">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.608126770" lon="10.247214492">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.290264464" lon="10.980698323">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.270755351" lon="10.995025944">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.603017417" lon="10.235090927">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.587091428" lon="10.076796980">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.584966954" lon="10.065661595">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.421106394" lon="9.783176057">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="54.792839308" lon="11.877102344">
+  <name>Primitivt toilet</name>
+  <cmt>Primitivt toilet</cmt>
+  <desc>Primitivt toilet</desc>
+</wpt>
+<wpt lat="57.180234315" lon="9.522301776">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.177384514" lon="9.438318558">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="57.294234105" lon="10.203053673">
+  <name>Toilet</name>
+  <cmt>Toilet</cmt>
+  <desc>Toilet</desc>
+</wpt>
+<wpt lat="55.224668813" lon="9.429709664">
+  <name>Haderslev Dyrehave</name>
+  <cmt>Haderslev Dyrehave</cmt>
+  <desc>Haderslev Dyrehave</desc>
+</wpt>
+<wpt lat="54.911230477" lon="9.830414839">
+  <name>Sønderskoven, Als ved Cathrinelund</name>
+  <cmt>Sønderskoven, Als ved Cathrinelund</cmt>
+  <desc>Sønderskoven, Als ved Cathrinelund</desc>
+</wpt>
+<wpt lat="55.017296712" lon="9.930465339">
+  <name>Nørreskoven, Als</name>
+  <cmt>Nørreskoven, Als</cmt>
+  <desc>Nørreskoven, Als</desc>
+</wpt>
+<wpt lat="54.915061377" lon="9.559690828">
+  <name>Rinkenæs Skov, Ravnsbjergvej</name>
+  <cmt>Rinkenæs Skov, Ravnsbjergvej</cmt>
+  <desc>Rinkenæs Skov, Ravnsbjergvej</desc>
+</wpt>
+<wpt lat="55.048271429" lon="9.462988229">
+  <name>Jørgensgård Skov v. Åbæk strand</name>
+  <cmt>Jørgensgård Skov v. Åbæk strand</cmt>
+  <desc>Jørgensgård Skov v. Åbæk strand</desc>
+</wpt>
+<wpt lat="55.121562738" lon="9.468147722">
+  <name>Kalvø</name>
+  <cmt>Kalvø</cmt>
+  <desc>Kalvø</desc>
+</wpt>
+<wpt lat="55.812249735" lon="10.051484599">
+  <name>Tønballe</name>
+  <cmt>Tønballe</cmt>
+  <desc>Tønballe</desc>
+</wpt>
+</gpx>
