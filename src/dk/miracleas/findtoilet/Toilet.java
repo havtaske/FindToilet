@@ -1,5 +1,7 @@
 package dk.miracleas.findtoilet;
 
+import com.google.android.gms.maps.model.LatLng;
+
 public class Toilet implements Cloneable, Comparable<Toilet> {
 
 	private int id;
@@ -18,6 +20,7 @@ public class Toilet implements Cloneable, Comparable<Toilet> {
 	private String desc;
 	private String area;
 	private String picture;
+	private LatLng latLng;
 	private int distance;
 
 	@Override
@@ -161,18 +164,27 @@ public class Toilet implements Cloneable, Comparable<Toilet> {
 		this.distance = distance;
 	}
 
+	public LatLng getLatLng() {
+		latLng = new LatLng(getLat(), getLon());
+		
+		return latLng;
+	}
+
+	public void setLatLng(LatLng latLng) {
+		this.latLng = latLng;
+	}
+
 	@Override
 	public int compareTo(Toilet another) {
-		
-		if(getDistance() < another.getDistance()){
+
+		if (getDistance() < another.getDistance()) {
 			return -1;
 		}
-		if(getDistance() == another.getDistance()){
+		if (getDistance() == another.getDistance()) {
 			return 0;
-		}
-		else{
+		} else {
 			return 1;
 		}
-		
+
 	}
 }

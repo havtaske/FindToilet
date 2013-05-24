@@ -4,11 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 import com.google.android.gms.maps.LocationSource;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.location.Location;
@@ -30,8 +33,6 @@ public class MainActivity extends Activity implements LocationListener, Location
 	public static Handler UIHandler = new Handler(Looper.getMainLooper());
 
 	private MyMenuView myMenu;
-	private LatLng latLng;
-	private MarkerOptions markerOptions;
 
 	private OnLocationChangedListener mListener;
 	private LocationManager locationManager;
@@ -99,25 +100,42 @@ public class MainActivity extends Activity implements LocationListener, Location
 	}
 
 	private void setUpMapIfNeeded() {
-		
-		// Do a null check to confirm that we have not already instantiated the map.
+
+		// Do a null check to confirm that we have not already instantiated the
+		// map.
 		if (map == null) {
 			// Try to obtain the map from the SupportMapFragment.
 			map = ((MapFragment) getFragmentManager().findFragmentById(R.id.main_map)).getMap();
+			
 			// Check if we were successful in obtaining the map.
-
 			if (map != null) {
 				setUpMap();
 			}
+			
+			map.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
+				
+				@Override
+				public void onInfoWindowClick(Marker marker) {
+				
+					for (int i = 0; i < toiletList.size(); i++) {
+						System.out.println(marker.getId());
+						if(marker.getPosition().equals(toiletList.get(i).getLatLng())){
+							Toast.makeText(getApplicationContext(), toiletList.get(i).getStreet(), Toast.LENGTH_LONG).show();
+						}						
+					}					
+				}
+			});
 
 			// register the LocationSource
 			map.setLocationSource(this);
+			map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(55.610841, 11.318689), 6));
+
 		}
 	}
 
 	private void setUpMap() {
 		map.setMyLocationEnabled(true);
-		
+
 	}
 
 	@Override
@@ -132,7 +150,9 @@ public class MainActivity extends Activity implements LocationListener, Location
 
 	@Override
 	public void onLocationChanged(Location location) {
+
 		if (mListener != null) {
+
 			mListener.onLocationChanged(location);
 
 			map.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
@@ -169,15 +189,16 @@ public class MainActivity extends Activity implements LocationListener, Location
 	// Add markers to map
 	public void loadMarkers(final List<Toilet> tmpList) {
 
-		runOnUiThread(new Runnable() { 
+		runOnUiThread(new Runnable() {
 
 			@Override
 			public void run() {
 
 				for (int i = 0; i < tmpList.size(); i++) {
-					
+
 					LatLng loc = new LatLng(tmpList.get(i).getLat(), tmpList.get(i).getLon());
-					map.addMarker(new MarkerOptions().position(loc).title(tmpList.get(i).getStreet()));
+					map.addMarker(new MarkerOptions().position(loc).title(tmpList.get(i).getStreet()));	
+					
 				}
 			}
 		});
@@ -244,7 +265,7 @@ public class MainActivity extends Activity implements LocationListener, Location
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
+
 	// Close mymenu if visible else close program
 	public void onBackPressed() {
 		if (myMenu.getState() == View.VISIBLE) {
