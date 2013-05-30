@@ -8,5 +8,6 @@
     <string name="kilometers">km</string>
     <string name="menu_search">Søg</string>
     <string name="gps_not_found">Slå venligst GPS til for at finde din location.</string>
+    <string name="toilets">Toiletter</string>
 
 </resources>

@@ -4,45 +4,62 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesClient;
+import com.google.android.gms.location.LocationClient;
+import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
-import com.google.android.gms.maps.LocationSource;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.app.Activity;
+import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements LocationListener, LocationSource {
+public class MainActivity extends Activity implements GooglePlayServicesClient.OnConnectionFailedListener,
+		GooglePlayServicesClient.ConnectionCallbacks, com.google.android.gms.location.LocationListener {
 
-	public static List<Toilet> toiletList = new ArrayList<Toilet>();
+	private final int zoom = 13;
+	public List<Toilet> toiletList = new ArrayList<Toilet>();
+	private List<Marker> markerList = new ArrayList<Marker>();
+
+	private LinearLayout ll;
+	private DrawerLayout mDrawerLayout;
+	private ListView list;
+	private MyListAdapter adapter;
 	private GoogleMap map;
-	public static Handler UIHandler = new Handler(Looper.getMainLooper());
-
-	private MyMenuView myMenu;
-
-	private OnLocationChangedListener mListener;
-	private LocationManager locationManager;
-
-	private Location currentLocation = new Location("test");
+	private LocationClient lClient;
+	private Location curLoc;
+	private LocationRequest lReq;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+		list = (ListView) findViewById(R.id.drawer_list);
+
+		adapter = new MyListAdapter(this, R.layout.list_layout, toiletList);
+		list.setAdapter(adapter);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+
+		setupLoc();
+		setUpMapIfNeeded();
 
 		new Thread(new Runnable() {
 
@@ -50,140 +67,101 @@ public class MainActivity extends Activity implements LocationListener, Location
 			public void run() {
 
 				loadData();
+				loadDistance();
 				loadMarkers(toiletList);
 
 			}
 		}).start();
+	}
 
-		myMenu = (MyMenuView) findViewById(R.id.myMenuView1);
+	// Updates adapter with items
+	public Runnable returnData = new Runnable() {
 
-		locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+		@Override
+		public void run() {
 
-		if (locationManager != null) {
-			boolean gpsIsEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-			boolean networkIsEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+			adapter.clear();
+			List<Toilet> tmpList = new ArrayList<Toilet>();
+			tmpList.addAll(toiletList);
+			Collections.sort(tmpList);
 
-			if (gpsIsEnabled) {
-				locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000L, 10F, this);
-			} else if (networkIsEnabled) {
-				locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000L, 10F, this);
-			} else {
-				Toast.makeText(this, getResources().getString(R.string.gps_not_found), Toast.LENGTH_LONG).show();
+			if (tmpList != null && tmpList.size() > 0) {
+				
+				int a = tmpList.size();
+				for (int i = 0; i < a; i++) {
+					adapter.add(tmpList.get(i));
+				}
 			}
-		} else {
-			// Show some generic error dialog because something must have gone
-			// wrong with location manager.
+			
+			adapter.notifyDataSetChanged();
+			tmpList = null;
+		}
+	};
+
+	// Setup all location services
+	private void setupLoc() {
+		
+		if (lClient == null) {
+
+			lClient = new LocationClient(this, this, this);
+			lClient.connect();
 		}
 
-		setUpMapIfNeeded();
+		if (lReq == null) {
 
-	}
-
-	@Override
-	public void onPause() {
-		if (locationManager != null) {
-			locationManager.removeUpdates(this);
-		}
-
-		super.onPause();
-	}
-
-	@Override
-	public void onResume() {
-		super.onResume();
-
-		setUpMapIfNeeded();
-
-		if (locationManager != null) {
-			map.setMyLocationEnabled(true);
+			lReq = LocationRequest.create();
+			lReq.setInterval(10000).setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 		}
 	}
 
 	private void setUpMapIfNeeded() {
 
-		// Do a null check to confirm that we have not already instantiated the
-		// map.
+		// Setup map if needed
 		if (map == null) {
-			// Try to obtain the map from the SupportMapFragment.
+
 			map = ((MapFragment) getFragmentManager().findFragmentById(R.id.main_map)).getMap();
-			
+
 			// Check if we were successful in obtaining the map.
 			if (map != null) {
-				setUpMap();
+				map.setMyLocationEnabled(true);
 			}
-			
+
 			map.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
-				
+
 				@Override
 				public void onInfoWindowClick(Marker marker) {
-				
+					System.out.println(marker.getId());
 					for (int i = 0; i < toiletList.size(); i++) {
-						System.out.println(marker.getId());
-						if(marker.getPosition().equals(toiletList.get(i).getLatLng())){
+
+						if (marker.getPosition().equals(toiletList.get(i).getLatLng())) {
 							Toast.makeText(getApplicationContext(), toiletList.get(i).getStreet(), Toast.LENGTH_LONG).show();
-						}						
-					}					
+						}
+					}
 				}
 			});
-
-			// register the LocationSource
-			map.setLocationSource(this);
-			map.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(55.610841, 11.318689), 6));
-
 		}
-	}
-
-	private void setUpMap() {
-		map.setMyLocationEnabled(true);
-
-	}
-
-	@Override
-	public void activate(OnLocationChangedListener listener) {
-		mListener = listener;
-	}
-
-	@Override
-	public void deactivate() {
-		mListener = null;
 	}
 
 	@Override
 	public void onLocationChanged(Location location) {
 
-		if (mListener != null) {
+		curLoc.set(location);
 
-			mListener.onLocationChanged(location);
+		loadDistance();
 
-			map.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
-			currentLocation.set(location);
-			loadDistance();
-			Collections.sort(toiletList);
-			myMenu.updateList();
+		runOnUiThread(returnData);
+
+		for (int i = 0; i < markerList.size(); i++) {
+
+			Marker m = markerList.get(i);
+			if(m.isInfoWindowShown()){
+				m.hideInfoWindow();
+				m.setSnippet(formatDist(toiletList.get(i).getDistance()));
+				m.showInfoWindow();
+			}else{
+				m.setSnippet(formatDist(toiletList.get(i).getDistance()));
+			}			
 		}
-	}
-
-	@Override
-	public void onProviderDisabled(String provider) {
-		// TODO Auto-generated method stub
-		Toast.makeText(this, "provider disabled", Toast.LENGTH_SHORT).show();
-	}
-
-	@Override
-	public void onProviderEnabled(String provider) {
-		// TODO Auto-generated method stub
-		Toast.makeText(this, "provider enabled", Toast.LENGTH_SHORT).show();
-	}
-
-	@Override
-	public void onStatusChanged(String provider, int status, Bundle extras) {
-		// TODO Auto-generated method stub
-		Toast.makeText(this, "status changed", Toast.LENGTH_SHORT).show();
-	}
-
-	// Global run on ui
-	public static void runOnUI(Runnable runnable) {
-		UIHandler.post(runnable);
 	}
 
 	// Add markers to map
@@ -197,17 +175,14 @@ public class MainActivity extends Activity implements LocationListener, Location
 				for (int i = 0; i < tmpList.size(); i++) {
 
 					LatLng loc = new LatLng(tmpList.get(i).getLat(), tmpList.get(i).getLon());
-					map.addMarker(new MarkerOptions().position(loc).title(tmpList.get(i).getStreet()));	
-					
+					Marker m = map.addMarker(new MarkerOptions().position(loc).title(tmpList.get(i).getStreet())
+							.snippet(formatDist(tmpList.get(i).getDistance())));
+					System.out.println(m.getId());
+					markerList.add(m);
+
 				}
 			}
 		});
-	}
-
-	public void loadData() {
-
-		toiletList = getData();
-
 	}
 
 	public void loadDistance() {
@@ -222,11 +197,17 @@ public class MainActivity extends Activity implements LocationListener, Location
 			toiletLocation.setLatitude(lat);
 			toiletLocation.setLongitude(lng);
 
-			toiletList.get(i).setDistance((int) currentLocation.distanceTo(toiletLocation));
-
+			toiletList.get(i).setDistance((int) curLoc.distanceTo(toiletLocation));
 		}
 	}
 
+	public void loadData() {
+
+		toiletList.clear();
+		toiletList = getData();
+	}
+
+	// Loads data from all sources
 	public List<Toilet> getData() {
 
 		List<Toilet> tmpList1;
@@ -237,20 +218,26 @@ public class MainActivity extends Activity implements LocationListener, Location
 
 		LocalXML lParser = new LocalXML(this);
 		tmpList2 = lParser.getData();
+		
+		tmpList1.addAll(tmpList2);
+		for (int i = 0; i < tmpList1.size(); i++) {
 
-		for (int i = 0; i < tmpList2.size(); i++) {
-
-			tmpList1.add(tmpList2.get(i));
+			tmpList1.get(i).setId(i);
 		}
 
+		tmpList2 = null;
 		return tmpList1;
-
 	}
 
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.menu:
-			myMenu.toggleMenu();
+			ll = (LinearLayout) findViewById(R.id.ll);
+			if (mDrawerLayout.isDrawerOpen(ll)) {
+				mDrawerLayout.closeDrawer(ll);
+			} else {
+				mDrawerLayout.openDrawer(ll);
+			}
 			break;
 
 		default:
@@ -266,12 +253,50 @@ public class MainActivity extends Activity implements LocationListener, Location
 		return true;
 	}
 
-	// Close mymenu if visible else close program
-	public void onBackPressed() {
-		if (myMenu.getState() == View.VISIBLE) {
-			myMenu.toggleMenu();
+	@Override
+	public void onConnected(Bundle connectionHint) {
+
+		curLoc = lClient.getLastLocation();
+		LatLng tmpLoc = new LatLng(curLoc.getLatitude(), curLoc.getLongitude());
+		map.animateCamera(CameraUpdateFactory.newLatLngZoom(tmpLoc, zoom));
+		lClient.requestLocationUpdates(lReq, this);
+	}
+
+	@Override
+	public void onDisconnected() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		// Stop GPS
+		lClient.disconnect();
+	}
+
+	@Override
+	public void onConnectionFailed(ConnectionResult result) {
+		// TODO Auto-generated method stub
+	}
+
+	// format distance
+	private String formatDist(float meters) {
+		if (meters < 1000) {
+			return ((int) meters) + getResources().getString(R.string.meters);
+		} else if (meters < 10000) {
+			return formatDec(meters / 1000f, 1) + getResources().getString(R.string.kilometers);
 		} else {
-			this.finish();
+			return ((int) (meters / 1000f)) + getResources().getString(R.string.kilometers);
 		}
+	}
+
+	// format km
+	private String formatDec(float val, int dec) {
+		int factor = (int) Math.pow(10, dec);
+
+		int front = (int) (val);
+		int back = (int) Math.abs(val * (factor)) % factor;
+
+		return front + "." + back;
 	}
 }
