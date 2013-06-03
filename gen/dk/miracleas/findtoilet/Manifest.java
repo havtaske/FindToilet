@@ -9,6 +9,6 @@ package dk.miracleas.findtoilet;
 
 public final class Manifest {
     public static final class permission {
-        public static final String MAPS_RECEIVE="dk.miracleas.mow2013.permission.MAPS_RECEIVE";
+        public static final String MAPS_RECEIVE="dk.miracleas.findtoilet.permission.MAPS_RECEIVE";
     }
 }

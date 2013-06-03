@@ -31,12 +31,13 @@ public class XmlParser extends BaseFeedParser {
 				}
 			}
 		});
+		/*
 		item.getChild(ID).setEndTextElementListener(new EndTextElementListener() {
 			public void end(String body) {
 				currentMessage.setId(Integer.parseInt(body));
 			}
 		});
-		
+		*/
 		item.getChild(STREET).setEndTextElementListener(new EndTextElementListener() {
 			public void end(String body) {
 				currentMessage.setStreet(body);

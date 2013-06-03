@@ -4,7 +4,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class Toilet implements Cloneable, Comparable<Toilet> {
 
-	private int id;
+	private String id;
 	private String street;
 	private int postal;
 	private String city;
@@ -28,11 +28,11 @@ public class Toilet implements Cloneable, Comparable<Toilet> {
 		return (Toilet) super.clone();
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

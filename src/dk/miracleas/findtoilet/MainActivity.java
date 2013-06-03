@@ -17,16 +17,20 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.Toast;
 
-public class MainActivity extends Activity implements GooglePlayServicesClient.OnConnectionFailedListener,
+public class MainActivity extends Activity implements OnInfoWindowClickListener, GooglePlayServicesClient.OnConnectionFailedListener,
 		GooglePlayServicesClient.ConnectionCallbacks, com.google.android.gms.location.LocationListener {
 
 	private final int zoom = 13;
@@ -48,19 +52,27 @@ public class MainActivity extends Activity implements GooglePlayServicesClient.O
 		setContentView(R.layout.activity_main);
 
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+		ll = (LinearLayout) findViewById(R.id.ll);
 		list = (ListView) findViewById(R.id.drawer_list);
-
 		adapter = new MyListAdapter(this, R.layout.list_layout, toiletList);
 		list.setAdapter(adapter);
-	}
+		list.setOnItemClickListener(new OnItemClickListener() {
 
-	@Override
-	protected void onResume() {
-		super.onResume();
-
-		setupLoc();
-		setUpMapIfNeeded();
-
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int pos, long arg3) {
+				
+				Toilet t = adapter.getItem(pos);
+				for (int i = 0; i < toiletList.size(); i++) {
+					
+					if(t.getId().equals(toiletList.get(i).getId())){
+						LatLng loc = new LatLng(toiletList.get(i).getLat(), toiletList.get(i).getLon());
+						map.animateCamera(CameraUpdateFactory.newLatLngZoom(loc, zoom));
+						mDrawerLayout.closeDrawer(ll);
+					}
+				}
+			}
+		});
+		
 		new Thread(new Runnable() {
 
 			@Override
@@ -72,6 +84,16 @@ public class MainActivity extends Activity implements GooglePlayServicesClient.O
 
 			}
 		}).start();
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+
+		setupLoc();
+		setUpMapIfNeeded();
+
+
 	}
 
 	// Updates adapter with items
@@ -124,6 +146,7 @@ public class MainActivity extends Activity implements GooglePlayServicesClient.O
 			// Check if we were successful in obtaining the map.
 			if (map != null) {
 				map.setMyLocationEnabled(true);
+				map.setInfoWindowAdapter(new MyInfoWindow(getLayoutInflater()));
 			}
 
 			map.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
@@ -132,9 +155,12 @@ public class MainActivity extends Activity implements GooglePlayServicesClient.O
 				public void onInfoWindowClick(Marker marker) {
 					System.out.println(marker.getId());
 					for (int i = 0; i < toiletList.size(); i++) {
-
-						if (marker.getPosition().equals(toiletList.get(i).getLatLng())) {
-							Toast.makeText(getApplicationContext(), toiletList.get(i).getStreet(), Toast.LENGTH_LONG).show();
+						
+						if(marker.getId().equals(toiletList.get(i).getId())){
+							LatLng loc = new LatLng(toiletList.get(i).getLat(), toiletList.get(i).getLon());
+														
+							Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("google.navigation:ll="+loc.latitude + "," + loc.longitude)); 
+							startActivity(intent);
 						}
 					}
 				}
@@ -171,7 +197,7 @@ public class MainActivity extends Activity implements GooglePlayServicesClient.O
 
 			@Override
 			public void run() {
-
+				
 				for (int i = 0; i < tmpList.size(); i++) {
 
 					LatLng loc = new LatLng(tmpList.get(i).getLat(), tmpList.get(i).getLon());
@@ -222,7 +248,7 @@ public class MainActivity extends Activity implements GooglePlayServicesClient.O
 		tmpList1.addAll(tmpList2);
 		for (int i = 0; i < tmpList1.size(); i++) {
 
-			tmpList1.get(i).setId(i);
+			tmpList1.get(i).setId("m" +i);
 		}
 
 		tmpList2 = null;
@@ -232,7 +258,7 @@ public class MainActivity extends Activity implements GooglePlayServicesClient.O
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.menu:
-			ll = (LinearLayout) findViewById(R.id.ll);
+			
 			if (mDrawerLayout.isDrawerOpen(ll)) {
 				mDrawerLayout.closeDrawer(ll);
 			} else {
@@ -298,5 +324,11 @@ public class MainActivity extends Activity implements GooglePlayServicesClient.O
 		int back = (int) Math.abs(val * (factor)) % factor;
 
 		return front + "." + back;
+	}
+
+	@Override
+	public void onInfoWindowClick(Marker marker) {
+		// TODO Auto-generated method stub
+		
 	}
 }
