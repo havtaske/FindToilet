@@ -30,7 +30,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
-public class MainActivity extends Activity implements OnInfoWindowClickListener, GooglePlayServicesClient.OnConnectionFailedListener,
+public class MainActivity extends Activity implements GooglePlayServicesClient.OnConnectionFailedListener,
 		GooglePlayServicesClient.ConnectionCallbacks, com.google.android.gms.location.LocationListener {
 
 	private final int zoom = 13;
@@ -153,7 +153,7 @@ public class MainActivity extends Activity implements OnInfoWindowClickListener,
 
 				@Override
 				public void onInfoWindowClick(Marker marker) {
-					System.out.println(marker.getId());
+					
 					for (int i = 0; i < toiletList.size(); i++) {
 						
 						if(marker.getId().equals(toiletList.get(i).getId())){
@@ -203,7 +203,7 @@ public class MainActivity extends Activity implements OnInfoWindowClickListener,
 					LatLng loc = new LatLng(tmpList.get(i).getLat(), tmpList.get(i).getLon());
 					Marker m = map.addMarker(new MarkerOptions().position(loc).title(tmpList.get(i).getStreet())
 							.snippet(formatDist(tmpList.get(i).getDistance())));
-					System.out.println(m.getId());
+					
 					markerList.add(m);
 
 				}
@@ -324,11 +324,5 @@ public class MainActivity extends Activity implements OnInfoWindowClickListener,
 		int back = (int) Math.abs(val * (factor)) % factor;
 
 		return front + "." + back;
-	}
-
-	@Override
-	public void onInfoWindowClick(Marker marker) {
-		// TODO Auto-generated method stub
-		
 	}
 }

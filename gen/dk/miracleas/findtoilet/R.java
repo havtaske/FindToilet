@@ -213,7 +213,6 @@ containing a value of this type.
         public static final int info_layout=0x7f030001;
         public static final int layout_my_menu=0x7f030002;
         public static final int list_layout=0x7f030003;
-        public static final int test=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
